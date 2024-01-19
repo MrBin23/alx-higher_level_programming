@@ -9,7 +9,10 @@ class Base:
     Method:
     __init__(self, id=None): class constructor to initialize the instance with id
     """
+
     __nb_objects = 0
+    def __init__(self, id=None):
+
     """
     initialise instance with unique id
 
@@ -17,9 +20,10 @@ class Base:
     id (int, optional): the id value to assign the instance
     """
 
-    def __init__(self, id=None):
         if id is not None:
             self.id = id
+            # Increment the class counter __nb_objects
         else:
             Base.__nb_objects += 1
+            # Assign the new value of __nb_objects to the public instance attribute 'id'
             self.id = Base.__nb_objects
