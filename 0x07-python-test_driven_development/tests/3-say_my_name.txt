@@ -13,7 +13,7 @@ Usage
 
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
 	>>> say_my_name("Brennan", "Baraban")
-	My Name is  Brennan Baraban
+	My name is  Brennan Baraban
 
 ::
 
